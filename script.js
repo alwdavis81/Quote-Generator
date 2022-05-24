@@ -5,7 +5,7 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document
   .getElementById('twitter')
-  .addEventListener('click', tweatQuote);
+  .addEventListener('click', tweetQuote);
 
 const newQuoteBtn = document
   .getElementById('new-quote')
