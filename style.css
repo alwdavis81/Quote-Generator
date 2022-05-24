@@ -23,8 +23,8 @@ body {
   max-width: 900px;
   padding: 20px 30px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.682);
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffffae;
+  box-shadow: 0 10px 10px 10px #00000033;
 }
 
 .quote-text {
@@ -82,27 +82,25 @@ button:active {
   font-size: 1.5rem;
 }
 
+p {
+  font-size: 1rem;
+}
+
+.footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.466);
+  color: #000;
+  text-align: center;
+}
+
+.heart {
+  color: red;
+}
+
 /* Loader */
-.loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #333;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* loader */
-
 .loader {
   border: 16px solid #f3f3f3;
   border-top: 16px solid #333;
