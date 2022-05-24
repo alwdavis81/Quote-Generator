@@ -10,6 +10,7 @@ const twitterBtn = document
 const newQuoteBtn = document
   .getElementById('new-quote')
   .addEventListener('click', newQuote);
+
 const loader = document.getElementById('loader');
 
 let apiQuotes = [];
