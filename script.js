@@ -10,7 +10,6 @@ const twitterBtn = document
 const newQuoteBtn = document
   .getElementById('new-quote')
   .addEventListener('click', newQuote);
-
 const loader = document.getElementById('loader');
 
 let apiQuotes = [];
@@ -44,7 +43,7 @@ function newQuote() {
   }
 
   // Check Quote Length to determine the styling
-  if (quote.text.length > 125) {
+  if (quote.text.length > 75) {
     quoteText.classList.add('long-quote');
   } else {
     quoteText.classList.remove('long-quote');
@@ -75,6 +74,7 @@ async function getQuotes() {
 function tweetQuote() {
   const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - 
     ${authorText.textContent}`;
+
   window.open(twitterUrl, '_blank');
 }
 
